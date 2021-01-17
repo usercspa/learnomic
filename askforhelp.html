@@ -54,59 +54,6 @@
 			font-family: arial;
 			color: #FFFFFF;
 		}
-
-		.container {
-			background-color: #333333;
-			text-align: center;
-			padding: 10px;
-			margin-left: 10px;
-			margin-right: 10px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-			color: #FFFFFF;
-		}
-
-		a {
-			color: #FFFFFF;
-		}
-
-		.column {
-			float: left;
-			width: 33.33%;
-			padding: 5px;
-		}
-
-		.row::after {
-			content: "";
-			clear: both;
-			display: table;
-		}
-
-		.row {
-			display: flex;
-		}
-
-		.column {
-			flex: 33.33%;
-			padding: 5px;
-		}
-
-		@media screen and (max-width: 500px) {
-			.column {
-				width: 100%;
-			}
-		}
-
-		.holder {
-			text-align: center;
-		}
-
-		button {
-			test-align: center;
-			background-color: #333333;
-			color: #FFFFFF;
-			border-radius: 16%;
-		}
 	</style>
 </head>
 
@@ -133,36 +80,13 @@
     </div>
 
 		<br />
-		<div id="zone">
+		<a href="/newquestion.html"><button class="addTopic">Post a new question</button></a>
 
-      <h1>
-        Discussion zone
-
-        </h1>
-
-			<div class="container">
-				<div class="row">
-
-					<a href="askforhelp.html">Ask for help</a>
-
-
-				</div>
-			</div>
-
-			<div class="container">
-				<div class="row">
-					<a href="learning.html">Lifelong learning</a>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<a href="self-learning.html">Self learning</a>
-				</div>
-			</div>
-
-
-
-
+		<h1 class="topicheading">
+			All Questions
+		</h1>
+		<!--show topics-->
+		<div class="topics"></div>
 </body>
 
 </html>

@@ -31,12 +31,14 @@ h2 {
 }
 
 .topnav a.active {
-  background-color: #38acec;
+  background-color: #0083ca;
   color: white;
 }
 
 body {
   background-color: #1a1a1a;
+  color: #FFFFFF;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .container {
