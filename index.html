@@ -1,82 +1,90 @@
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- add shortcut icon -->
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://cdn.glitch.com/143fa93e-b644-4bf6-9084-6fb75bbf131c%2Flogo1_15_214430-removebg-preview.ico?v=1610871433179"
-      sizes="16x16"
-    />
-    <!-- add font -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Cookie"
-      rel="stylesheet"
-    />
-    <title>Aspire For Her Forum</title>
-    <style>
-      .logo {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 20%;
-      }
 
-      .addTopic {
-        border: 1px;
-        box-shadow: 3px 3px #888888;
-        border-radius: 8px;
-        background-color: #2832C2;
-        color: #FFFFFF;
-        margin-left: 24px;
-        padding: 10px;
-      }
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- add shortcut icon -->
+	<link rel="shortcut icon" type="image/x-icon"
+		href="https://cdn.glitch.com/143fa93e-b644-4bf6-9084-6fb75bbf131c%2Flogo1_15_214430-removebg-preview.ico?v=1610871433179"
+		sizes="16x16" />
 
-      .topics {
-        margin-left: 24px;
-        margin-right: 24px;
-        padding: 10px;
-      }
+	<!--link to firebase-->
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="/__/firebase/8.2.3/firebase-app.js"></script>
 
-      .topicheading {
-        margin-left: 24px;
-        margin-right: 24px;
-        padding: 10px;
-        background-color: #00CCFF;
-        font-family: arial;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-        <div class="topnav">
-      <a class="navbar-brand" href="/">
-        <div class="logo-image">
-          <img
+	<script defer src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+	<script defer src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+
+
+	<!-- Initialize Firebase -->
+	<script src="/__/firebase/init.js"></script>
+	<!-- add font -->
+	<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" />
+	<title>Aspire For Her Forum</title>
+	<style>
+		.logo {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 20%;
+		}
+
+		.addTopic {
+			border: 1px;
+			box-shadow: 3px 3px #888888;
+			border-radius: 8px;
+			background-color: #2832C2;
+			color: #FFFFFF;
+			margin-left: 24px;
+			padding: 10px;
+		}
+
+		.topics {
+			margin-left: 24px;
+			margin-right: 24px;
+			padding: 10px;
+		}
+
+		.topicheading {
+			margin-left: 24px;
+			margin-right: 24px;
+			padding: 10px;
+			background-color: #00CCFF;
+			font-family: arial;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="topnav">
+			<a class="navbar-brand" href="/">
+				<div class="logo-image">
+					<img
             src="https://cdn.glitch.com/143fa93e-b644-4bf6-9084-6fb75bbf131c%2Flogo1_15_214430-removebg-preview.png?v=1610871475385"
             class="img-fluid"
           />
         </div>
-      </a>
-      <a class="active" href="home.html">Home</a>
-      <a href="shop.html">Shop</a>
-     </div>
-    </header>  
-    <div>
-      <img
+			</a>
+			<a class="active" href="home.html">Home</a>
+			<a href="shop.html">Shop</a>
+		</div>
+	</header>
+	<div>
+		<img
         src="https://cdn.glitch.com/143fa93e-b644-4bf6-9084-6fb75bbf131c%2Flogo1_15_214430-removebg-preview.png?v=1610871475385"
         class="logo"
       />
     </div>
 
-    <br />
-    <a href="/newquestion.html"><button class="addTopic">Post a new question</button></a>
+		<br />
+		<a href="/newquestion.html"><button class="addTopic">Post a new question</button></a>
 
-    <h1 class="topicheading">
-      Topics
-    </h1>
-    <!--show topics-->
-    <div class="topics"></div>
-  </body>
+		<h1 class="topicheading">
+			Topics
+		</h1>
+		<!--show topics-->
+		<div class="topics"></div>
+</body>
+
 </html>
