@@ -9,3 +9,13 @@ import "firebase/auth";
 import "firebase/firestore";
 
 import * as firebaseui from 'firebaseui';
+
+// Document elements
+const login = document.getElementById('login');
+const userbookContainer = document.getElementById('userbook-container');
+
+const form = document.getElementById('reply');
+const input = document.getElementById('message');
+const userbook = document.getElementById('userbook');
+
+var rsvpListener = null;
