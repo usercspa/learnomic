@@ -2,5 +2,12 @@
   "name": "js",
   "version": "0.0.0",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@firebase/util": "^0.3.4",
+    "firebase": "^8.2.3",
+    "firebase-auth": "^0.1.2",
+    "firebase-tools": "^9.2.1",
+    "firebaseui": "^4.7.1",
+    "firestore": "^1.1.6"
+  }
 }
