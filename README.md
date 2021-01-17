@@ -1,3 +1,3 @@
-# js-sujumk
+# Learnomic
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/js-sujumk)
+Peer learning app
