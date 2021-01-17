@@ -18,4 +18,24 @@ const form = document.getElementById('reply');
 const input = document.getElementById('message');
 const userbook = document.getElementById('userbook');
 
-var rsvpListener = null;
+var loginListener = null;
+
+async function main() {
+
+
+  const ui = new firebaseui.auth.AuthUI(firebase.auth());
+
+  // Called when the user clicks the login button
+login.addEventListener("click",
+ () => {
+    if (firebase.auth().currentUser) {
+      // User is signed in; allows user to sign out
+      firebase.auth().signOut();
+    } else {
+      // No user is signed in; allows user to sign in
+      ui.start("#firebaseui-auth-container", uiConfig);
+    }
+});
+
+
+}  
